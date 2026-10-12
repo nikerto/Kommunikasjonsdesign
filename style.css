@@ -1,0 +1,281 @@
+/* ============================================
+   GENERELT – gjelder hele siden
+   ============================================ */
+body {
+    margin: 0;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #222222;
+    background-color: #ffffff;
+}
+
+/* Lenker i teksten */
+a {
+    color: #c0392b;
+}
+
+
+/* ============================================
+   TOPPEN AV SIDEN
+   ============================================ */
+header {
+    background-color: #1d2a3a;
+    color: #ffffff;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Menyen: fjerner prikkene og legger lenkene på rad */
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+
+/* ============================================
+   SELVE SAKEN
+   ============================================ */
+
+/* Gjør teksten smalere og legger den i midten */
+main {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Overskrifter */
+h1, h2, h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 40px;
+    margin: 5px 0 15px 0;
+}
+
+h2 {
+    font-size: 26px;
+    margin-top: 40px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+/* Den lille teksten over tittelen */
+.stikktittel {
+    margin: 20px 0 0 0;
+    color: #c0392b;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.ingress {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.byline {
+    color: #666666;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    border-top: 1px solid #dddddd;
+    padding-top: 10px;
+}
+
+
+/* ============================================
+   BILDER
+   ============================================ */
+figure {
+    margin: 30px 0;
+}
+
+/* Bildene blir aldri bredere enn teksten */
+img {
+    width: 100%;
+    display: block;
+}
+
+figcaption {
+    color: #666666;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+
+/* ============================================
+   BOKSER
+   ============================================ */
+.kortversjon {
+    background-color: #f2f5f8;
+    border-left: 5px solid #1d2a3a;
+    padding: 5px 20px;
+}
+
+.kortversjon h2 {
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+.faktaboks {
+    background-color: #fdf3e7;
+    padding: 5px 20px;
+    margin-top: 30px;
+}
+
+/* Det uthevede sitatet */
+blockquote {
+    margin: 30px 0;
+    padding-left: 20px;
+    border-left: 5px solid #c0392b;
+    color: #c0392b;
+    font-size: 26px;
+    font-style: italic;
+}
+
+
+/* ============================================
+   TABELLER
+   ============================================ */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+th, td {
+    border: 1px solid #cccccc;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #1d2a3a;
+    color: #ffffff;
+}
+
+/* Raden som viser hva som er igjen av pengene */
+.igjen {
+    font-weight: bold;
+    background-color: #fdf3e7;
+}
+
+/* Ukeplanen kan scrolles sidelengs hvis skjermen er for smal */
+.ukeplan {
+    overflow-x: auto;
+}
+
+
+/* ============================================
+   AVSTEMNING
+   ============================================ */
+.avstemning {
+    background-color: #f2f5f8;
+    padding: 5px 20px 20px 20px;
+    margin-top: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.avstemning h2 {
+    margin-top: 15px;
+}
+
+.avstemning p {
+    margin: 8px 0;
+}
+
+button {
+    background-color: #c0392b;
+    color: #ffffff;
+    border: none;
+    padding: 10px 25px;
+    margin-top: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #96281b;
+}
+
+
+/* ============================================
+   BUNNEN AV SIDEN
+   ============================================ */
+footer {
+    background-color: #1d2a3a;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+
+/* ============================================
+   MOBIL – gjelder bare når skjermen er
+   smalere enn 600px
+   ============================================ */
+@media (max-width: 600px) {
+    body {
+        font-size: 16px;
+    }
+
+    /* Logo og meny under hverandre i stedet for ved siden av */
+    header {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .ingress {
+        font-size: 19px;
+    }
+
+    blockquote {
+        font-size: 22px;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    th, td {
+        padding: 5px;
+    }
+}
