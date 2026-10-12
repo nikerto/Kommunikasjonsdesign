@@ -1,6 +1,3 @@
-/* ============================================
-   GENERELT – gjelder hele siden
-   ============================================ */
 body {
     margin: 0;
     font-family: Georgia, "Times New Roman", serif;
@@ -9,16 +6,10 @@ body {
     color: #222222;
     background-color: #ffffff;
 }
-
-/* Lenker i teksten */
 a {
     color: #c0392b;
 }
 
-
-/* ============================================
-   TOPPEN AV SIDEN
-   ============================================ */
 header {
     background-color: #1d2a3a;
     color: #ffffff;
@@ -35,7 +26,6 @@ header {
     font-weight: bold;
 }
 
-/* Menyen: fjerner prikkene og legger lenkene på rad */
 nav ul {
     margin: 0;
     padding: 0;
@@ -56,18 +46,12 @@ nav a:hover {
 }
 
 
-/* ============================================
-   SELVE SAKEN
-   ============================================ */
-
-/* Gjør teksten smalere og legger den i midten */
 main {
     max-width: 700px;
     margin: 0 auto;
     padding: 20px;
 }
 
-/* Overskrifter */
 h1, h2, h3 {
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.2;
@@ -87,7 +71,6 @@ h3 {
     font-size: 20px;
 }
 
-/* Den lille teksten over tittelen */
 .stikktittel {
     margin: 20px 0 0 0;
     color: #c0392b;
@@ -110,15 +93,10 @@ h3 {
     padding-top: 10px;
 }
 
-
-/* ============================================
-   BILDER
-   ============================================ */
 figure {
     margin: 30px 0;
 }
 
-/* Bildene blir aldri bredere enn teksten */
 img {
     width: 100%;
     display: block;
@@ -131,10 +109,6 @@ figcaption {
     margin-top: 8px;
 }
 
-
-/* ============================================
-   BOKSER
-   ============================================ */
 .kortversjon {
     background-color: #f2f5f8;
     border-left: 5px solid #1d2a3a;
@@ -152,7 +126,7 @@ figcaption {
     margin-top: 30px;
 }
 
-/* Det uthevede sitatet */
+
 blockquote {
     margin: 30px 0;
     padding-left: 20px;
@@ -162,10 +136,6 @@ blockquote {
     font-style: italic;
 }
 
-
-/* ============================================
-   TABELLER
-   ============================================ */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -185,21 +155,16 @@ th {
     color: #ffffff;
 }
 
-/* Raden som viser hva som er igjen av pengene */
+
 .igjen {
     font-weight: bold;
     background-color: #fdf3e7;
 }
 
-/* Ukeplanen kan scrolles sidelengs hvis skjermen er for smal */
+
 .ukeplan {
     overflow-x: auto;
 }
-
-
-/* ============================================
-   AVSTEMNING
-   ============================================ */
 .avstemning {
     background-color: #f2f5f8;
     padding: 5px 20px 20px 20px;
@@ -229,10 +194,6 @@ button:hover {
     background-color: #96281b;
 }
 
-
-/* ============================================
-   BUNNEN AV SIDEN
-   ============================================ */
 footer {
     background-color: #1d2a3a;
     color: #ffffff;
@@ -242,18 +203,11 @@ footer {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
 }
-
-
-/* ============================================
-   MOBIL – gjelder bare når skjermen er
-   smalere enn 600px
-   ============================================ */
 @media (max-width: 600px) {
     body {
         font-size: 16px;
     }
 
-    /* Logo og meny under hverandre i stedet for ved siden av */
     header {
         flex-direction: column;
         gap: 10px;
