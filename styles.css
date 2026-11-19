@@ -1,0 +1,492 @@
+
+
+/* stil */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #222;
+  line-height: 1.6;
+}
+
+a {
+  color: inherit;
+}
+
+h1, h2, h3 {
+  line-height: 1.1;
+}
+
+/* Røde ord i overskriftene */
+h1 em, h2 em, h2 span {
+  font-style: normal;
+  color: #d6001c;
+}
+
+/* Små røde titler over overskriftene */
+.eyebrow {
+  color: #d6001c;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+/* Rød lese-linje øverst (styres av script.js) */
+#progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 4px;
+  background: #d6001c;
+}
+
+/* "Hopp til innhold" vises bare med tastatur */
+.skip {
+  position: absolute;
+  top: -100px;
+}
+
+.skip:focus {
+  top: 10px;
+  background: #fff;
+  padding: 10px;
+}
+
+/* Toppmenyy  */
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 40px;
+  border-bottom: 1px solid #ddd;
+}
+
+.brand {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.brand-icon {
+  background: #d6001c;
+  color: #fff;
+  padding: 4px 8px;
+  margin-right: 8px;
+}
+
+.site-header nav a {
+  margin: 0 10px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.status {
+  background: #000;
+  color: #fff;
+  font-size: 12px;
+  padding: 4px 8px;
+}
+
+/* Hovedoppsl
+ag = */
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 60px 100px;
+}
+
+.hero h1 {
+  font-size: 64px;
+  margin: 0 0 20px;
+}
+
+.hero-lede {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.byline {
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+  font-size: 14px;
+}
+
+.explore,
+.return {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #d6001c;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 20px;
+}
+
+.hero-footnote {
+  font-size: 12px;
+  color: #777;
+}
+
+/* Illustrasjonen: rød sirkel og to "kvitteringer" */
+.hero-art {
+  position: relative;
+  min-height: 420px;
+}
+
+.hero-circle {
+  position: absolute;
+  top: 80px;
+  left: 20%;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background: #d6001c;
+  color: #fff;
+  font-size: 100px;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 40px;
+}
+
+.hero-circle small {
+  display: block;
+  font-size: 16px;
+}
+
+.ticket {
+  position: absolute;
+  z-index: 2;
+  width: 160px;
+  padding: 12px;
+  background: #fff;
+  border: 2px solid #000;
+}
+
+.ticket-top {
+  top: 20px;
+  right: 0;
+}
+
+.ticket-bottom {
+  bottom: 20px;
+  left: 0;
+}
+
+.ticket strong {
+  display: block;
+  font-size: 32px;
+}
+
+.ticket span,
+.ticket small {
+  display: block;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+/* Gul infoboks  */
+.prototype-banner {
+  background: #fff7d6;
+  border-left: 6px solid #f2c200;
+  padding: 20px 100px;
+}
+
+.prototype-banner strong {
+  display: block;
+}
+
+/* Kapitler  */
+.chapter {
+  padding: 70px 100px;
+}
+
+.chapter-number {
+  display: inline-block;
+  background: #d6001c;
+  color: #fff;
+  font-weight: bold;
+  padding: 4px 10px;
+  margin-bottom: 25px;
+}
+
+.intro-grid,
+.choice-grid,
+.context-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+}
+
+.chapter h2,
+.ending h2 {
+  font-size: 50px;
+  margin: 0;
+}
+
+/* Brødtekst i serif, som i en avis */
+.readable,
+.context-grid p,
+.ending p {
+  font-family: Georgia, serif;
+  font-size: 18px;
+}
+
+.source-note {
+  background: #f3f3f3;
+  border-left: 4px solid #000;
+  padding: 15px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+
+/* Grått felt med ord */
+.visual-break {
+  position: relative;
+  height: 250px;
+  margin-top: 50px;
+  background: #f3f3f3;
+  overflow: hidden;
+}
+
+.center-stamp {
+  position: absolute;
+  top: 50px;
+  left: calc(50% - 75px);
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: #d6001c;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 45px;
+}
+
+.float-word {
+  position: absolute;
+  font-size: 50px;
+  font-weight: bold;
+  color: #ddd;
+}
+
+.fw1 { left: 5%; top: 5%; }
+.fw2 { right: 5%; top: 5%; }
+.fw3 { left: 5%; bottom: 5%; }
+.fw4 { right: 5%; bottom: 5%; }
+
+/* Budsjettet */
+.dark-section {
+  background: #1b1b1b;
+  color: #fff;
+}
+
+.dark-section .eyebrow,
+.dark-section h2 em {
+  color: #ff5a6e;
+}
+
+.dark-section h2 {
+  font-size: 50px;
+  margin: 0;
+}
+
+.demo-label {
+  display: inline-block;
+  background: #f2c200;
+  color: #000;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 5px 10px;
+  margin: 30px 0 10px;
+}
+
+.budget-panel {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.budget-controls {
+  background: #2a2a2a;
+  padding: 30px;
+}
+
+.budget-results {
+  background: #fff;
+  color: #000;
+  padding: 30px;
+}
+
+.slider-row label {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+}
+
+.slider-row input {
+  width: 100%;
+  margin-bottom: 15px;
+  accent-color: #d6001c;
+}
+
+.reset {
+  padding: 8px 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.remaining {
+  font-size: 70px;
+  font-weight: bold;
+}
+
+/* Rødt tall når utgiftene er større enn inntekten */
+.remaining.negative {
+  color: #d6001c;
+}
+
+/* Stolpediagram – bredden settes av script.js */
+.bar-chart {
+  display: flex;
+  height: 50px;
+  /* margin-top: 10px; */
+  background: #eee;
+}
+
+.bar-rent,   .dot.rent   { background: #000; }
+.bar-food,   .dot.food   { background: #d6001c; }
+.bar-travel, .dot.travel { background: #f2c200; }
+.bar-other,  .dot.other  { background: #888; }
+.bar-left,   .dot.left   { background: #ccc; }
+
+.legend span {
+  margin-right: 15px;
+  font-size: 13px;
+}
+
+.dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-right: 5px;
+}
+
+.result-meta {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 20px;
+}
+
+.result-meta strong {
+  display: block;
+  font-size: 24px;
+}
+
+.tiny-note {
+  font-size: 12px;
+  color: #777;
+}
+
+/*  Valgkort  */
+.choice-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  margin-top: 50px;
+}
+
+.choice-cards article {
+  border: 1px solid #ddd;
+  border-top: 5px solid #d6001c;
+  padding: 20px;
+}
+
+.choice-cards span {
+  color: #d6001c;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/* Det større bildet  */
+.context-section {
+  background: #f3f3f3;
+}
+
+.context-section h2 {
+  font-size: 50px;
+  margin: 0;
+}
+
+.pending {
+  border-left: 4px solid #d6001c;
+  padding-left: 10px;
+}
+
+/*Avslutning */
+.ending {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.return {
+  background: #000;
+}
+
+/*  Bunntekst*/
+.footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 30px 100px;
+  background: #000;
+  color: #fff;
+  border-top: 6px solid #d6001c;
+}
+
+/* Mobil og nettbrett størrelse */
+@media (max-width: 900px) {
+  .site-header nav {
+    display: none;
+  }
+
+  .hero,
+  .chapter,
+  .prototype-banner,
+  .footer {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .hero,
+  .intro-grid,
+  .choice-grid,
+  .context-grid,
+  .budget-panel,
+  .choice-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .footer {
+    flex-direction: column;
+  }
+
+  .hero h1 {
+    font-size: 42px;
+  }
+
+  .chapter h2,
+  .dark-section h2,
+  .context-section h2,
+  .ending h2 {
+    font-size: 36px;
+  }
+
+  .float-word {
+    font-size: 28px;
+  }
+}

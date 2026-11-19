@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="no">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#0d1a22">
+  <meta name="description" content="Team 14 – første prototype til XL-artikkelen om studentøkonomi.">
+  <title>Hva koster det egentlig å være student? | Team 14</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div id="progress" aria-hidden="true"></div>
+  <a class="skip" href="#innhold">Hopp til innhold</a>
+  <header class="site-header">
+    <a class="brand" href="#topp" aria-label="Team 14, til toppen"><span class="brand-icon">14<span class="brand-dot">.</span></span><span>TEAM 14 <small>ET STUDENTPROSJEKT</small></span></a>
+    <nav aria-label="Hovedmeny"><a href="#historien">Historien</a><a href="#budsjett">Budsjettet</a><a href="#valg">Prioriteringene</a></nav>
+    <span class="status">PROTOTYPE 01</span>
+  </header>
+  <main id="innhold">
+    <section class="hero" id="topp" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-line"></span> XL-ARTIKKEL · STUDENTØKONOMI</p>
+        <h1 id="hero-title">Hva koster det <em>egentlig</em> å være student?</h1>
+        <p class="hero-lede">En måned. Et budsjett. En hel studiehverdag. Vi undersøker ikke bare hvor pengene blir av, men også hvilke valg de fører til.</p>
+        <div class="byline"><span class="byline-mark">14</span><span>Av Team 14 <small>Kommunikasjonsdesign · høsten 2026</small></span></div>
+        <a class="explore" href="#historien">Utforsk historien <span aria-hidden="true">↓</span></a>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="ticket ticket-top"><span>INNTEKT</span><strong>+ KR</strong><i></i><small>Hva kommer inn?</small></div>
+        <div class="hero-circle"><span>30</span><small>DAGER</small></div>
+        <div class="ticket ticket-bottom"><span>UTGIFTER</span><strong>− KR</strong><i></i><small>Hva blir igjen?</small></div>
+        <span class="hero-orbit orbit-one"></span><span class="hero-orbit orbit-two"></span>
+      </div>
+      <div class="hero-footnote">INTERAKTIV REPORTASJE · FØRSTE UTKAST</div>
+    </section>
+
+    <div class="prototype-banner" role="note"><strong>Om denne prototypen</strong><span>Dette er en tidlig demonstrasjon av XL-artikkelens fortellerform. Budsjettallene nedenfor er <strong>illustrative eksempeltall</strong>, ikke innsamlede data. Sitater, personopplysninger og dokumenterte tall legges inn etter kildekontroll.</span></div>
+
+    <section class="chapter intro" id="historien">
+      <div class="chapter-number">01 <span>/</span> MENNESKET BAK TALLENE</div>
+      <div class="intro-grid">
+        <div><p class="eyebrow dark">FØRST: STUDENTEN</p><h2>Det er mer enn <span>kroner og øre.</span></h2></div>
+        <div class="readable"><p>Hvor langt rekker egentlig pengene gjennom en måned? For en student er ikke svaret bare et regnestykke. Husleie, mat og transport skal betales, men økonomien kan også påvirke hvor mye tid som blir igjen til undervisning, venner og hvile.</p>
+        <p>I den ferdige historien følger vi en intervjuet student gjennom en vanlig måned. Vi skal vise hvordan inntekter og utgifter henger sammen med konkrete valg i hverdagen, og deretter se erfaringene i lys av relevant statistikk.</p>
+        <div class="source-note"><span class="source-icon">i</span><span><strong>Under arbeid:</strong> Studentens navn, studieprogram, bosituasjon og godkjente intervjusitater skal fylles inn fra verifisert kildemateriale. Ingen personhistorie er konstruert her.</span></div></div>
+      </div>
+      <div class="visual-break" role="img" aria-label="Illustrasjon med ordene husleie, jobb, studier og fritid"><span class="float-word fw1">HUSLEIE</span><span class="float-word fw2">JOBB</span><span class="float-word fw3">STUDIER</span><span class="float-word fw4">FRITID</span><div class="center-stamp">EN<br>HVERDAG</div></div>
+    </section>
+
+    <section class="dark-section" id="budsjett">
+      <div class="chapter container"><div class="chapter-number light">02 <span>/</span> HVOR BLIR PENGENE AV?</div><div class="budget-heading"><div><p class="eyebrow">UTFORSK ET EKSEMPEL</p><h2>En måned på <em>papiret.</em></h2></div><p>Flytt på tallene for å se hvordan hver utgift påvirker det som står igjen. Alle beløpene er kun demonstrasjonsdata.</p></div>
+      <div class="demo-label">DEMO / ILLUSTRATIVE BELØP – IKKE FAKTISKE STUDENTDATA</div>
+      <div class="budget-panel">
+        <div class="budget-controls"><h3>Juster månedsbudsjettet</h3><p class="control-sub">Beløp per måned · kroner</p>
+          <div class="slider-row"><label for="income">Samlet inntekt <output id="income-out" for="income"></output></label><input type="range" id="income" min="8000" max="26000" step="500" value="16500"></div>
+          <div class="slider-row"><label for="rent">Husleie <output id="rent-out" for="rent"></output></label><input type="range" id="rent" min="3000" max="12000" step="250" value="7500"></div>
+          <div class="slider-row"><label for="food">Mat <output id="food-out" for="food"></output></label><input type="range" id="food" min="1000" max="6500" step="250" value="3200"></div>
+          <div class="slider-row"><label for="travel">Transport <output id="travel-out" for="travel"></output></label><input type="range" id="travel" min="0" max="3000" step="100" value="600"></div>
+          <div class="slider-row"><label for="other">Andre utgifter <output id="other-out" for="other"></output></label><input type="range" id="other" min="0" max="5500" step="100" value="1800"></div>
+          <button type="button" class="reset" id="reset">↺ Nullstill demoen</button>
+        </div>
+        <div class="budget-results" aria-live="polite"><div class="remaining-label">PENGER IGJEN ETTER UTGIFTER</div><div class="remaining" id="remaining">3 400 <small>kr</small></div><p class="remaining-caption" id="remaining-caption">Dette er det som står igjen i dette eksempelet.</p>
+          <div class="bar-chart" aria-label="Visuell fordeling av inntekt"><div id="bar-rent" class="bar-rent" title="Husleie"></div><div id="bar-food" class="bar-food" title="Mat"></div><div id="bar-travel" class="bar-travel" title="Transport"></div><div id="bar-other" class="bar-other" title="Andre utgifter"></div><div id="bar-left" class="bar-left" title="Igjen"></div></div>
+          <div class="legend"><span><i class="dot rent"></i>Husleie</span><span><i class="dot food"></i>Mat</span><span><i class="dot travel"></i>Transport</span><span><i class="dot other"></i>Andre</span><span><i class="dot left"></i>Igjen</span></div><div class="result-meta"><div><span>Utgifter</span><strong id="expenses">13 100 kr</strong></div><div><span>Andel av inntekt brukt</span><strong id="share">79 %</strong></div></div>
+          <p class="tiny-note">Verktøyet illustrerer en mulig budsjettvisualisering. Det er ikke en undersøkelse, statistikk eller økonomisk rådgivning.</p>
+        </div>
+      </div></div>
+    </section>
+
+    <section class="chapter choice" id="valg"><div class="chapter-number">03 <span>/</span> PENGER ELLER TID?</div><div class="choice-grid"><div><p class="eyebrow dark">VALG I HVERDAGEN</p><h2>Når budsjettet møter <span>virkeligheten.</span></h2></div><div class="readable"><p>Hvis det er lite igjen etter de faste utgiftene, kan studenten forsøke å jobbe mer. Men en ekstra vakt er også timer som ikke kan brukes på studier eller fritid. Hvordan oppleves denne avveiningen i praksis?</p><p>Det skal vi undersøke med konkrete intervjuepisoder, ikke med antakelser. I den ferdige saken skal vi dokumentere hva studenten eventuelt velger bort, og hvordan prioriteringene endrer seg i løpet av måneden.</p></div></div>
+      <div class="choice-cards"><article><span>01 / ARBEID</span><h3>Flere vakter?</h3><p>Hva betyr ekstra arbeid for inntekten og for tiden til studier?</p></article><article><span>02 / STUDIER</span><h3>Mindre lesetid?</h3><p>Hvordan planlegges skolearbeid når jobb og undervisning kolliderer?</p></article><article><span>03 / FRITID</span><h3>Hva prioriteres bort?</h3><p>Hvilke aktiviteter lar studenten eventuelt være på grunn av økonomien?</p></article></div>
+    </section>
+    <section class="context-section"><div class="chapter container"><div class="chapter-number light">04 <span>/</span> DET STØRRE BILDET</div><div class="context-grid"><div><p class="eyebrow">EN HISTORIE ER IKKE HELE HISTORIEN</p><h2>Fra personlig erfaring til <em>perspektiv.</em></h2></div><div><p>Studentens erfaringer skal sammenholdes med kontrollert informasjon fra blant annet Lånekassen, Statistisk sentralbyrå og relevante studentundersøkelser. Vi ønsker også å bruke en fagperson eller studentrådgiver for å belyse sammenhengen mellom økonomi, arbeid og studietid.</p><p class="pending">PLANLAGT TIL FERDIG VERSJON: KILDEBELAGT STATISTIKK, SAMMENLIGNBAR GRAFIKK OG FAGKOMMENTAR.</p></div></div></div></section>
+    <section class="ending"><p class="eyebrow dark">AVSLUTNING · UNDER UTVIKLING</p><h2>Hva betyr det egentlig <em>å ha nok?</em></h2><p>Den ferdige fortellingen vender tilbake til studenten og lar dokumenterte erfaringer og sitater belyse hva økonomisk handlingsrom betyr i en vanlig studiehverdag.</p><a class="return" href="#topp">Til toppen ↑</a></section>
+  </main>
+  <footer class="footer"><div><strong>TEAM 14</strong><p>ITM30719-1 · Kommunikasjonsdesign · 2026</p></div><div><strong>XL-ARTIKKEL · PROTOTYPE 01</strong><p>Konsept basert på gruppens XL-oppgave 1 og 2. Illustrasjoner og demotall er laget for prototypen.</p></div></footer>
+</body></html>

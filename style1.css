@@ -1,0 +1,96 @@
+body {
+    font-family: Georgia, serif;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #222222;
+    background-color: #ffffff;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+header {
+    border-bottom: 3px solid #1a4d8f;
+    margin-bottom: 30px;
+}
+
+header p {
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    color: #1a4d8f;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+
+h1, h2, h3 {
+    font-family: Arial, sans-serif;
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-size: 26px;
+    color: #1a4d8f;
+    margin-top: 40px;
+}
+
+.ingress {
+    font-family: Arial, sans-serif;
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.byline {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #555555;
+    border-top: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
+    padding: 8px 0;
+}
+
+figure {
+    margin: 30px 0;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+figcaption {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #555555;
+    margin-top: 5px;
+}
+ol {
+    background-color: #f2f2f2;
+    padding: 20px 20px 20px 45px;
+    border-radius: 8px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+aside {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    background-color: #e8eef6;
+    border-left: 5px solid #1a4d8f;
+    padding: 5px 25px;
+    margin: 40px 0;
+}
+
+footer {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #555555;
+    border-top: 1px solid #cccccc;
+    margin-top: 50px;
+    padding: 20px 0;
+}
