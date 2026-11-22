@@ -1,0 +1,12 @@
+# Netlify: statisk nettside, ingen build-steg.
+# Netlify publiserer mappen "portefolje" (samme mappe som zippes til Wiseflow).
+[build]
+  publish = "portefolje"
+  command = ""
+
+# Forsiden (/) sender leseren til XL-artikkelen.
+[[redirects]]
+  from = "/"
+  to = "/xl-studentokonomi.html"
+  status = 302
+  force = true
