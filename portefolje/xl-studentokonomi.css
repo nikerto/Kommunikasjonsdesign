@@ -1,8 +1,9 @@
-/* ---------- Felles avisoppsett (likt i alle artiklene) ---------- */
+/* Felles avisoppsett (likt i alle artiklene)*/
 body {
     margin: 0;
     font-family: Georgia, "Times New Roman", serif;
     font-size: 18px;
+    /* font-weight: 100; */
     line-height: 1.6;
     color: #222222;
     background-color: #ffffff;
@@ -23,6 +24,7 @@ img {
     background-color: #1d2a3a;
     color: #ffffff;
     padding: 15px 20px;
+    /* padding: 13px 14px; */
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -37,6 +39,7 @@ img {
     padding: 0;
     list-style: none;
     display: flex;
+    /* flex-direction: row; */
     flex-wrap: wrap;
     gap: 10px 20px;
 }
@@ -79,6 +82,7 @@ h2 {
 
 .stikktittel {
     margin: 20px 0 0 0;
+    /* margin-top: 40px; */
     color: #c0392b;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
@@ -116,6 +120,7 @@ blockquote {
     border-left: 5px solid #c0392b;
     color: #c0392b;
     font-size: 26px;
+    /* font-family: 'Courier New', Courier, monospace; */
     font-style: italic;
 }
 
@@ -124,6 +129,7 @@ blockquote {
     padding: 5px 20px;
     margin-top: 30px;
     font-family: Arial, Helvetica, sans-serif;
+    /* font-size: medium; */
     font-size: 16px;
 }
 
@@ -131,6 +137,7 @@ blockquote {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
     color: #444444;
+    /* color: #dddddd; */
 }
 
 .kilder h2 {
@@ -167,6 +174,7 @@ blockquote {
     color: #222222;
     font-weight: bold;
     text-decoration: none;
+    /* text-decoration: underline; */
 }
 
 .les-ogsa a:hover {
@@ -188,6 +196,7 @@ footer {
     margin-top: 40px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
+    /* font-weight: 100px; */
 }
 
 @media (max-width: 600px) {

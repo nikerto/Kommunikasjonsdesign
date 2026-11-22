@@ -1,4 +1,4 @@
-/* ---------- Felles avisoppsett (likt i alle artiklene) ---------- */
+/* Viktig: Felles avisoppsett (likt i alle artiklene)  */
 body {
     margin: 0;
     font-family: Georgia, "Times New Roman", serif;
@@ -22,6 +22,7 @@ img {
 .topp {
     background-color: #1d2a3a;
     color: #ffffff;
+    /* color: #f2f5f8; */
     padding: 15px 20px;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -65,6 +66,7 @@ main {
 h1, h2, h3 {
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.2;
+    /* line-gap-override: inherit; */
 }
 
 h1 {
@@ -107,6 +109,7 @@ figcaption {
     color: #666666;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
+    /* margin-bottom: 10px; */
     margin-top: 8px;
 }
 
@@ -137,9 +140,10 @@ blockquote {
     font-size: 20px;
 }
 
-/* Les også: lenker til de andre artiklene */
+/* Les også "Text": lenker til de andre artiklene */
 .les-ogsa {
     margin-top: 50px;
+    /* margin-bottom: auto; */
     border-top: 3px solid #1d2a3a;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -175,6 +179,7 @@ blockquote {
 
 .les-ogsa span {
     display: block;
+    /* display: block; */
     color: #c0392b;
     font-size: 13px;
     text-transform: uppercase;
@@ -208,12 +213,12 @@ footer {
     }
 }
 
-/* ---------- Bare for KI-artikkelen ---------- */
+/* Viktig Bare for KI-artikkelen */
 .portrett img {
     max-width: 420px;
 }
 
-/* Enkelt søylediagram */
+/* Enkelt søyylediagram */
 .diagram {
     background-color: #f2f5f8;
     padding: 5px 20px 20px 20px;
@@ -238,6 +243,7 @@ footer {
     gap: 10px;
     margin-bottom: 10px;
     font-size: 15px;
+    /* border-bottom: #1d2a3a; */
 }
 
 .spor {
